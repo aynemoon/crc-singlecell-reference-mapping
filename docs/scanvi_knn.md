@@ -92,23 +92,79 @@ cells in the archived benchmark. A zero or uncertain result is informative.
 
 ## Validation status
 
-The complete raw-data reproduction is pending. Direct PyPI and GEO requests
-timed out in the implementation worker, which initially lacks AnnData,
-Scanpy, scvi-tools and PyTorch. The original lock is retained. The worker has
-Python 3.12.14, nine exposed CPU threads, about 9.7 GiB RAM and no visible GPU.
+The unchanged existing GitHub Actions workflow passed on the standard
+`ubuntu-latest` runner for commit `0985ef0`.
 
-Local checks use Ruff 0.16.8 from its official release workflow artifact,
-verified against the wheel SHA256 in `uv.lock`, and pytest 9.1.1 source from
-its official tag. NumPy 2.3.5, pandas 2.2.3 and scikit-learn 1.8.0 come from
-the worker. These checks supplement the locked CI run.
+- `uv sync --frozen` succeeded.
+- `uv run ruff check .` passed.
+- `uv run pytest -q` completed with **32 passed, 2 warnings in 18.87 seconds**.
+- The warnings concern an upstream Pyro escape sequence and the deliberate
+  test of predictions outside the truth-label set.
+- The pipeline test uses real AnnData and deterministic model doubles.
+  The plotting tests cover archived and expanded method lists.
 
-The head tests cover class-column order, normalized probabilities, exact and
-mixed-neighbour predictions, query row permutations and incompatible classes.
-The pipeline test uses deterministic model doubles and real kNN to check
-reference-only labels, query metadata removal, the native output and reuse of
-the novelty array. Plot tests cover archived and expanded method lists.
-These tests do not establish CRC accuracy or the quality of a learned latent
-representation. Runtime and final test totals are recorded in the PR.
+[Locked-environment CI run](https://github.com/aynemoon/crc-singlecell-reference-mapping/actions/runs/42369804498)
+
+The same complete locked suite also passed locally with 32 tests and two
+warnings in 15.73 seconds. This supersedes the earlier dependency-isolated
+checks. Local Ruff lint, formatting and compilation passed. The exact lock
+was installed after moving the package cache from the limited home tmpfs
+to workspace disk.
+
+All four core GEO inputs were downloaded and passed gzip integrity checks.
+
+| Input | Bytes | SHA-256 |
+|---|---:|---|
+| `smc_counts.txt.gz` | 128941455 | `deff856c7fe1d2c845af5b31e1c65a1dd95ea29541772a66c89bda3aaa8c0666` |
+| `smc_annotation.txt.gz` | 434022 | `4bf2ebdadc88da53b0c46e654a6576e841925addc25c981d7cdbc0d988b4677c` |
+| `kul3_counts.txt.gz` | 56598691 | `046cbbd6c7501a4ddbca6d09fc0bb923e62d4d9421d5781efdeacb2c0a5b3b31` |
+| `kul3_annotation.txt.gz` | 194418 | `4eb9da239bef95b9003c0f6d0eeb41c6598ecc794cd25f57ad06d9bad81e881b` |
+
+### Full-data reproduction attempt
+
+The full default script 01 was executed in an isolated reproduction directory.
+Ten original training, preprocessing, scoring and configuration files were
+verified byte for byte against commit `63bcf65028fb`. The worker exposes
+Python 3.12.14, nine CPU threads, approximately 9.7 GiB RAM and no visible GPU.
+
+The full import terminated with exit 137 (SIGKILL) after sustained high memory
+use. Reduced smoke-input preparation was also active near termination. No
+kernel diagnostic confirmed the exact kill cause. No complete full-size
+reference/query output, trained full model or new CRC performance estimate
+was produced. The original reported result files remain the reported archive.
+
+A full validation requires a successful complete import and the original
+training schedules, followed by transfer, patient summaries, open-set runs
+and regenerated figures. A further attempt should isolate the importer and
+provide sufficient memory. The existing loader also exposes a smaller
+`chunksize` option, which can be assessed as an I/O resource adjustment with
+checks for identical cell/gene order and counts. Preprocessing changes belong
+in a separate contribution. The current CI workflow runs software tests.
+
+### Reduced real-data backend smoke
+
+An explicitly reduced software probe selected 1,200 SMC columns and 300 KUL3
+columns uniformly with seed 0, without using labels for selection. It retained
+all 33,694 input genes while loading, then selected 500 HVGs from the reference.
+It used eight latent dimensions, one hidden layer of width 32, batch size 128,
+four CPU threads and one epoch for each training/adaptation stage.
+
+Per-patient Seurat-v3 LOESS was numerically singular with the reduced donor
+sample sizes. The probe was rerun with pooled reference-only HVG selection.
+Original sample keys were retained for the models. This pooled selection is
+a smoke-specific adaptation. Full benchmark preprocessing is unchanged.
+
+Actual reference training, both query mappings and all six Transfer outputs
+completed in 3.28 seconds, excluding input preparation and imports. Process
+peak RSS was approximately 1,186 MiB. The smoke had 32 named reference classes.
+Checks covered finite normalized probabilities, shapes, prediction lengths
+and matching native/kNN class order.
+
+This probe establishes backend execution on a reduced real input. It supplies
+no CRC accuracy, rare-subtype result or statistical superiority claim. The
+full four-way companion study and patient-paired performance intervals remain
+pending full-size reproduction. Native calibration/conformal output also
+requires a separate held-out-donor evaluation of the new head.
 
 ## Attribution and next extensions
 
