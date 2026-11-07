@@ -49,6 +49,17 @@ def knn_on_embedding(Z_ref, y_ref, Z_qry, k: int) -> Transfer:
     return Transfer(proba, clf.classes_, dist.mean(1))
 
 
+def scanvi_knn(
+    z_ref: np.ndarray, y_ref: np.ndarray, z_qry: np.ndarray, k: int, classes: np.ndarray
+) -> Transfer:
+    """Vote on frozen scANVI latents, with probability columns in native scANVI order."""
+    vote = knn_on_embedding(z_ref, y_ref, z_qry, k)
+    column = {label: i for i, label in enumerate(vote.classes)}
+    if set(classes) != column.keys() or len(classes) != len(column):
+        raise ValueError("scANVI classes must match the labelled reference classes")
+    return Transfer(vote.proba[:, [column[label] for label in classes]], classes, vote.novelty)
+
+
 def knn_pca(
     X_ref, y_ref, X_qry, n_pcs: int, k: int, seed: int
 ) -> tuple[Transfer, np.ndarray, np.ndarray]:

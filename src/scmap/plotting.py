@@ -26,7 +26,8 @@ GRID = "#dddddd"  # kept for reference lines only; no background grid
 # blue and red stay distinct under common colour-vision deficiencies; red and green differ in
 # luminance
 BLUE, RED, PURPLE, SKY, GREEN = "#0072B2", "#B2182B", "#7B3294", "#56B4E9", "#009E73"
-SERIES = [BLUE, RED, GREEN, PURPLE]
+SERIES = [BLUE, RED, GREEN, PURPLE, "#E69F00"]
+CLASSIFIERS = ("logreg", "knn_pca", "scvi_knn", "scanvi", "scanvi_knn")
 SEQUENTIAL = LinearSegmentedColormap.from_list("seq_blue", ["#ffffff", "#9ecae1", BLUE, "#08306b"])
 
 METHOD_LABELS = {
@@ -34,6 +35,7 @@ METHOD_LABELS = {
     "knn_pca": "kNN (PCA)",
     "scvi_knn": "scVI + kNN",
     "scanvi": "scANVI",
+    "scanvi_knn": "scANVI + kNN",
     "scanvi_latent_distance": "scANVI (latent distance)",
 }
 

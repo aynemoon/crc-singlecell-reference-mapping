@@ -13,11 +13,11 @@ import anndata as ad
 import numpy as np
 import pandas as pd
 
-from scmap.baselines import Transfer, knn_on_embedding, knn_pca, logreg
+from scmap.baselines import Transfer, knn_on_embedding, knn_pca, logreg, scanvi_knn
 from scmap.models import map_query, scanvi_soft, train_reference
 from scmap.preprocess import lognorm, select_hvgs
 
-METHODS = ("logreg", "knn_pca", "scvi_knn", "scanvi")
+METHODS = ("logreg", "knn_pca", "scvi_knn", "scanvi", "scanvi_knn")
 
 
 def run_transfer(
@@ -33,6 +33,8 @@ def run_transfer(
     fine, unlabeled = lab["fine"], lab["unlabeled"]
     genes = select_hvgs(ref, cfg["data"]["n_hvg"])
     ref_h, qry_h = ref[:, genes].copy(), qry[:, genes].copy()
+    # The mapping models only need the query batch. Truth and label roles stay with the scorer.
+    qry_h.obs = qry_h.obs[["sample"]].copy()
 
     labelled = (ref.obs[fine] != unlabeled).to_numpy()
     y_ref = ref.obs[fine].astype(str).to_numpy()
@@ -64,10 +66,10 @@ def run_transfer(
     out["scanvi"] = Transfer(proba, classes, 1.0 - proba.max(1))
     zr, zq = lvae.get_latent_representation(), q_lvae.get_latent_representation()
     emb["scANVI"] = (zr[labelled], zq, labelled)
-    # a second, label-free novelty score for scANVI: distance to the reference in latent space
-    out["scanvi_latent_distance"] = Transfer(
-        proba, classes, knn_on_embedding(zr[labelled], y_ref[labelled], zq, b["knn_k"]).novelty
-    )
+    vote = scanvi_knn(zr[labelled], y_ref[labelled], zq, b["knn_k"], classes)
+    # Keep the native probabilities for the published distance-only variant.
+    out["scanvi_latent_distance"] = Transfer(proba, classes, vote.novelty)
+    out["scanvi_knn"] = vote
     if tmp:
         tmp.cleanup()
     return out, emb

@@ -41,6 +41,12 @@ scANVI. The query is mapped into scVI and scANVI with scArches, keeping the refe
 frozen. Every analysis (calibration, conformal sets, reference size, doublets, scib-metrics) is in
 [docs/results.md](docs/results.md); the model is described in [MODEL_CARD.md](MODEL_CARD.md).
 
+The benchmark also exposes `scanvi_knn`, a distance-weighted kNN classifier on the same frozen
+scANVI reference and mapped query embeddings. Its probabilities follow the native scANVI
+class order. The table above contains the original reported results. The implementation,
+validation status and controlled representation/classifier study are documented in
+[docs/scanvi_knn.md](docs/scanvi_knn.md).
+
 ## Quickstart
 
 ```bash

@@ -19,9 +19,16 @@ import pandas as pd
 
 from scmap.config import load_config
 from scmap.evaluate import classification_scores
-from scmap.plotting import DOUBLE, METHOD_LABELS, MM, SERIES, apply_style, panel_label, save
-
-CLASSIFIERS = ["logreg", "knn_pca", "scvi_knn", "scanvi"]
+from scmap.plotting import (
+    CLASSIFIERS,
+    DOUBLE,
+    METHOD_LABELS,
+    MM,
+    SERIES,
+    apply_style,
+    panel_label,
+    save,
+)
 
 
 def main() -> None:
@@ -33,8 +40,10 @@ def main() -> None:
     pred = pd.read_parquet(tables / "predictions.parquet").set_index("cell")
 
     rows = {"patient": [], "tissue": []}
-    for method in CLASSIFIERS:
-        p = pred[pred["method"] == method].reindex(obs.index)
+    for method, p in pred.groupby("method", sort=False):
+        if method not in CLASSIFIERS:
+            continue
+        p = p.loc[obs.index]
         for factor in rows:
             for level, idx in obs.groupby(factor, observed=True).indices.items():
                 sub, truth = p.iloc[idx], obs.iloc[idx]
@@ -75,11 +84,13 @@ def plot(per_patient: pd.DataFrame, per_tissue: pd.DataFrame, figures) -> None:
     ):
         levels = sorted(df[factor].unique(), key=lambda v: str(v))
         x = np.arange(len(levels))
-        width = 0.8 / len(CLASSIFIERS)
-        for i, (method, colour) in enumerate(zip(CLASSIFIERS, SERIES, strict=True)):
+        present = set(df["method"])
+        colours = {m: c for m, c in zip(CLASSIFIERS, SERIES, strict=True) if m in present}
+        width = 0.8 / len(colours)
+        for i, (method, colour) in enumerate(colours.items()):
             d = df[df["method"] == method].set_index(factor).loc[levels]
             ax.bar(
-                x + (i - 1.5) * width,
+                x + (i - (len(colours) - 1) / 2) * width,
                 d["fine_accuracy"],
                 width=width,
                 color=colour,
