@@ -60,6 +60,18 @@ def test_transfer_uses_reference_labels_and_keeps_query_order(monkeypatch, tmp_p
     frame = pipeline.predictions_frame(query, {"scanvi_knn": vote}, {"z": "Z", "a": "A"})
     assert frame["cell"].tolist() == ["q9", "q2", "q7"]
 
+    changed = query.copy()
+    changed.obs["cell_subtype"] = ["a", "z", "a"]
+    changed.obs["cell_type"] = "adversarial lineage"
+    changed.obs["label_role"] = "novel"
+    altered, _ = pipeline.run_transfer(ref, changed, cfg, 0, tmp_path)
+    for method, original in transfers.items():
+        np.testing.assert_array_equal(altered[method].classes, original.classes)
+        np.testing.assert_array_equal(altered[method].proba, original.proba)
+        np.testing.assert_array_equal(altered[method].novelty, original.novelty)
+    assert query.obs["label_role"].eq("shared").all()
+    assert query.obs["cell_subtype"].tolist() == ["z", "a", "z"]
+
     masked = query[::-1].copy()
     masked.obs = masked.obs[["sample"]].copy()
     repeated, _ = pipeline.run_transfer(ref, masked, cfg, 0, tmp_path)
