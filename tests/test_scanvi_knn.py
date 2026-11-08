@@ -31,3 +31,13 @@ def test_scanvi_knn_rejects_incompatible_class_order(classes):
         scanvi_knn(
             np.array([[0.0], [1.0]]), np.array(["z", "a"]), np.array([[0.0]]), 1, np.array(classes)
         )
+
+
+@pytest.mark.parametrize("reference,k", [([[-1.0], [1.0]], 2), ([[0.0], [0.0], [1.0]], 3)])
+def test_equal_votes_follow_declared_order_including_conflicting_duplicates(reference, k):
+    labels = np.array(["a", "z"] if k == 2 else ["a", "z", "a"])
+    # For zero-distance duplicates, the farther 'a' must receive no vote weight.
+    for classes, expected in ((["z", "a"], "z"), (["a", "z"], "a")):
+        vote = scanvi_knn(np.array(reference), labels, np.array([[0.0]]), k, np.array(classes))
+        np.testing.assert_array_equal(vote.proba, [[0.5, 0.5]])
+        assert vote.predicted.tolist() == [expected]

@@ -22,6 +22,7 @@ from scmap.plotting import (
     SINGLE,
     SKY,
     apply_style,
+    interval_points,
     panel_label,
     save,
 )
@@ -135,16 +136,7 @@ def fig_accuracy() -> None:
         )
         m = m.loc[[method for method in CLASSIFIERS if method in m.index]]
         x = np.arange(len(m))
-        # with 6 query patients the percentile interval can sit below the point estimate
-        # (most patient-resamples omit a patient and score lower); clip bars at zero
-        ax.errorbar(
-            x,
-            m.value,
-            yerr=[np.clip(m.value - m.ci_low, 0, None), np.clip(m.ci_high - m.value, 0, None)],
-            fmt="o",
-            color=SERIES[0],
-            elinewidth=0.8,
-        )
+        interval_points(ax, x, m.value, m.ci_low, m.ci_high, color=SERIES[0])
         ax.set_xticks(x, [METHOD_LABELS[k] for k in m.index], rotation=30, ha="right")
         ax.set_xlim(-0.6, len(m) - 0.4)
         ax.set_ylabel(f"Macro-F1 on KUL3\n{label}")

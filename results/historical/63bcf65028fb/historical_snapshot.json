@@ -1,0 +1,7 @@
+{
+  "commit": "63bcf65028fb2597a23742c1f52a21d963697681",
+  "sha256": {
+    "metrics_fine.csv": "bfe11414a6a9b82b218aa30e227490c422a6d87ef1e8fd3993fe61d975e154d4",
+    "per_class_f1_fine.csv": "bab92a1240b2ff2095f04c533ef2ea5c8e81016233198935b181c8d26ef9be00"
+  }
+}

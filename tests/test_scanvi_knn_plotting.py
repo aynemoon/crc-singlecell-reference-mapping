@@ -8,7 +8,25 @@ import pytest
 
 matplotlib.use("Agg")
 
-from scmap.plotting import CLASSIFIERS  # noqa: E402
+from scmap.plotting import CLASSIFIERS, interval_points  # noqa: E402
+
+
+@pytest.mark.parametrize("horizontal", [False, True])
+def test_interval_endpoints_are_not_clipped_to_estimate(horizontal):
+    import matplotlib.pyplot as plt
+
+    fig, ax = plt.subplots()
+    intervals, points = interval_points(
+        ax, [0, 1], [0.9, 0.1], [0.6, 0.2], [0.8, 0.4], horizontal=horizontal
+    )
+    expected = (
+        [[[0.6, 0], [0.8, 0]], [[0.2, 1], [0.4, 1]]]
+        if horizontal
+        else [[[0, 0.6], [0, 0.8]], [[1, 0.2], [1, 0.4]]]
+    )
+    np.testing.assert_allclose(intervals.get_segments(), expected)
+    np.testing.assert_allclose(points.get_xdata() if horizontal else points.get_ydata(), [0.9, 0.1])
+    plt.close(fig)
 
 
 def load_script(name):
