@@ -1,0 +1,182 @@
+=== COMMIT ===
+506442b42c37a00e99c046bf5ca44cea121cb2c3
+=== BRANCH ===
+feature/archmap-scpoli
+=== WORKING TREE ===
+ M results/figures/fig8_per_patient.pdf
+ M results/figures/fig8_per_patient.png
+ M results/tables/metrics_coarse.csv
+ M results/tables/metrics_fine.csv
+ M results/tables/novelty_natural.csv
+ M results/tables/per_class_f1_fine.csv
+ M results/tables/per_patient.csv
+ M results/tables/per_tissue.csv
+?? results/pr1_review/
+=== CONFIG AND LOCK HASHES ===
+b04b58fd5dc1228d7effdf3a72d52b8e94a06fd8fcbed93a68dd2da029758bf7  configs/default.yaml
+72f0c470fa38d6aa9adbb7dde6be68036024d016eef37ea0cbda192a296ac78c  uv.lock
+=== PACKAGE VERSIONS ===
+absl-py==2.5.0
+aiohappyeyeballs==2.7.1
+aiohttp==3.14.3
+aiosignal==1.4.0
+anndata==0.13.4
+annotated-types==0.8.0
+array-api-compat==1.15.0
+asttokens==3.0.2
+attrs==26.1.0
+certifi==2026.7.22
+chex==0.1.92
+cloudpickle==3.1.2
+comm==0.2.3
+contourpy==1.4.0
+cuda-bindings==13.4.3
+cuda-pathfinder==1.8.2
+cuda-toolkit==13.0.3.0
+cycler==0.12.1
+debugpy==1.8.22
+docrep==0.3.2
+donfig==0.8.1.post1
+executing==2.2.1
+fast-array-utils==1.5.1
+filelock==4.0.3
+fonttools==4.66.0
+formulaic==1.2.2
+frozenlist==1.8.0
+fsspec==2026.9.0
+google-crc32c==1.8.0
+grpcio==1.84.0
+h5py==3.16.0
+idna==3.20
+igraph==1.0.0
+imageio==2.38.0
+iniconfig==2.3.0
+interface-meta==2.0.1
+ipykernel==7.4.0
+ipython==9.17.1
+ipython-pygments-lexers==1.1.1
+jax==0.11.2
+jaxlib==0.11.2
+jedi==0.20.0
+jinja2==3.1.6
+joblib==1.6.0
+jupyter-client==8.10.0
+jupyter-core==5.9.1
+kiwisolver==1.5.1
+lazy-loader==0.6
+legacy-api-wrap==1.5
+lightning==2.6.6
+lightning-utilities==0.15.3
+llvmlite==0.49.0
+markdown==3.10.3
+markdown-it-py==4.2.0
+markupsafe==3.0.3
+matplotlib==3.11.2
+matplotlib-inline==0.2.2
+mdurl==0.1.2
+ml-collections==1.1.0
+ml-dtypes==0.6.0
+mpmath==1.3.0
+msgspec==0.21.1
+mudata==0.4.1
+multidict==6.9.1
+narwhals==2.26.0
+natsort==8.4.0
+nest-asyncio2==1.7.3
+networkx==3.7
+numba==0.67.0
+numcodecs==0.17.0
+numpy==2.5.3
+nvidia-cublas==13.1.1.3
+nvidia-cuda-cupti==13.0.85
+nvidia-cuda-nvrtc==13.0.88
+nvidia-cuda-runtime==13.0.96
+nvidia-cudnn-cu13==9.24.0.43
+nvidia-cufft==12.0.0.61
+nvidia-cufile==1.15.1.6
+nvidia-curand==10.4.0.35
+nvidia-cusolver==12.0.4.66
+nvidia-cusparse==12.6.3.3
+nvidia-cusparselt-cu13==0.8.1
+nvidia-nccl-cu13==2.30.7
+nvidia-nvjitlink==13.4.92
+nvidia-nvshmem-cu13==3.4.5
+nvidia-nvtx==13.0.85
+opt-einsum==3.4.0
+packaging==26.3
+pandas==3.0.6
+parso==0.8.7
+patsy==1.0.3
+pexpect==4.9.0
+pillow==12.3.0
+platformdirs==4.12.3
+plottable==0.1.5
+pluggy==1.6.0
+prompt-toolkit==3.0.53
+propcache==0.5.4
+protobuf==7.36.2
+psutil==7.2.2
+ptyprocess==0.7.0
+pure-eval==0.2.4
+pyarrow==25.0.1
+pydantic==2.13.5
+pydantic-core==2.46.5
+pydantic-settings==2.15.0
+pygments==2.21.0
+pynndescent==0.6.0
+pyparsing==3.3.3
+pyro-api==0.1.2
+pyro-ppl==1.9.1
+pytest==9.1.1
+python-dateutil==2.9.0.post0
+python-dotenv==1.2.3
+pytorch-lightning==2.6.6
+pyyaml==6.0.3
+pyzmq==27.2.0
+rich==15.0.0
+ruff==0.16.8
+scanpy==1.12.4
+scib-metrics==0.6.1
+scikit-image==0.26.0
+scikit-learn==1.9.1
+scikit-misc==0.5.2
+scipy==1.18.1
+-e file:///home/aysan/crc-singlecell-reference-mapping
+scverse-misc==0.1.6
+scvi-tools==1.5.1
+seaborn==0.13.2
+session-info2==0.4.2
+setuptools==84.0.0
+six==1.17.0
+sparse==0.19.2
+stack-data==0.6.3
+statsmodels==0.15.0
+sympy==1.14.0
+tensorboard==2.21.0
+tensorboard-data-server==0.7.2
+texttable==1.7.0
+threadpoolctl==3.7.0
+tifffile==2026.9.20
+toolz==1.1.0
+torch==2.14.0
+torchmetrics==1.9.0
+tornado==6.5.10
+tqdm==4.70.1
+traitlets==5.16.1
+triton==3.8.0
+typing-extensions==4.16.0
+typing-inspection==0.4.4
+umap-learn==0.5.12
+wcwidth==0.9.1
+werkzeug==3.1.8
+wrapt==2.4.1
+xarray==2026.7.0
+yarl==1.25.1
+zarr==3.4.0
+=== RAW INPUT HASHES ===
+4eb9da239bef95b9003c0f6d0eeb41c6598ecc794cd25f57ad06d9bad81e881b  data/raw/kul3_annotation.txt.gz
+046cbbd6c7501a4ddbca6d09fc0bb923e62d4d9421d5781efdeacb2c0a5b3b31  data/raw/kul3_counts.txt.gz
+42ed840feb62aec786f092a18ea8c0cb88d07f919df207cc8f12dc2b08e96699  data/raw/pelka_clusters.csv.gz
+0452149b0bcff9660951de87913b82a4d72784c08d0c782e49395f756a4b9853  data/raw/pelka_metatables.csv.gz
+4bf2ebdadc88da53b0c46e654a6576e841925addc25c981d7cdbc0d988b4677c  data/raw/smc_annotation.txt.gz
+deff856c7fe1d2c845af5b31e1c65a1dd95ea29541772a66c89bda3aaa8c0666  data/raw/smc_counts.txt.gz

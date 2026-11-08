@@ -1,0 +1,15 @@
+analysis,omitted_patient,metric,value,ci_low,ci_high
+equal_patient_mean,,macro_f1,-0.0069042585958672782,-0.013965720584470745,0.00040649450702812595
+equal_patient_mean,,accuracy,0.0055923742798718963,-0.015435754300531346,0.023384119390488678
+leave_one_patient_out,KUL01,macro_f1,0.0019998115535408978,,
+leave_one_patient_out,KUL01,accuracy,0.015176352387499259,,
+leave_one_patient_out,KUL19,macro_f1,-0.012972848458985498,,
+leave_one_patient_out,KUL19,accuracy,-0.0032228954492715678,,
+leave_one_patient_out,KUL21,macro_f1,-0.007336250438817471,,
+leave_one_patient_out,KUL21,accuracy,0.0071334214002641838,,
+leave_one_patient_out,KUL28,macro_f1,-0.0043151003329242599,,
+leave_one_patient_out,KUL28,accuracy,0.0033441709242917339,,
+leave_one_patient_out,KUL30,macro_f1,-0.0039039889048759768,,
+leave_one_patient_out,KUL30,accuracy,0.0017945266935845972,,
+leave_one_patient_out,KUL31,macro_f1,-0.00039694562728453953,,
+leave_one_patient_out,KUL31,accuracy,0.0063832805333585707,,

@@ -1,0 +1,81 @@
+method,truth,prediction,count,fraction
+scanvi,CMS1,CMS1,248,0.32717678100263853
+scanvi,CMS1,CMS2,56,0.073878627968337732
+scanvi,CMS1,CMS3,445,0.5870712401055409
+scanvi,CMS1,CMS4,1,0.0013192612137203166
+scanvi,CMS1,Intermediate,2,0.0026385224274406332
+scanvi,CMS1,Mature Enterocytes,3,0.0039577836411609502
+scanvi,CMS1,Pro-inflammatory,1,0.0013192612137203166
+scanvi,CMS1,SPP1+,1,0.0013192612137203166
+scanvi,CMS1,Stem-like/TA,1,0.0013192612137203166
+scanvi,CMS2,CMS1,92,0.14838709677419354
+scanvi,CMS2,CMS2,437,0.70483870967741935
+scanvi,CMS2,CMS3,55,0.088709677419354843
+scanvi,CMS2,CMS4,1,0.0016129032258064516
+scanvi,CMS2,Intermediate,31,0.050000000000000003
+scanvi,CMS2,Mature Enterocytes,3,0.0048387096774193551
+scanvi,CMS2,Pro-inflammatory,1,0.0016129032258064516
+scanvi,CMS3,CMS1,42,0.052238805970149252
+scanvi,CMS3,CMS2,61,0.075870646766169156
+scanvi,CMS3,CMS3,683,0.84950248756218905
+scanvi,CMS3,Intermediate,9,0.011194029850746268
+scanvi,CMS3,Mature Enterocytes,8,0.0099502487562189053
+scanvi,CMS3,Pro-inflammatory,1,0.0012437810945273632
+scanvi,CMS4,CMS1,10,0.33333333333333331
+scanvi,CMS4,CMS2,6,0.20000000000000001
+scanvi,CMS4,CMS3,10,0.33333333333333331
+scanvi,CMS4,Intermediate,3,0.10000000000000001
+scanvi,CMS4,Pro-inflammatory,1,0.033333333333333333
+scanvi,cDC,Proliferating,1,0.0061728395061728392
+scanvi,cDC,Regulatory T cells,1,0.0061728395061728392
+scanvi,cDC,SPP1+,7,0.043209876543209874
+scanvi,cDC,cDC,153,0.94444444444444442
+scanvi,T follicular helper cells,CD4+ T cells,24,0.092664092664092659
+scanvi,T follicular helper cells,CD8+ T cells,1,0.0038610038610038611
+scanvi,T follicular helper cells,CMS3,1,0.0038610038610038611
+scanvi,T follicular helper cells,Regulatory T cells,5,0.019305019305019305
+scanvi,T follicular helper cells,T follicular helper cells,225,0.86872586872586877
+scanvi,T follicular helper cells,T helper 17 cells,3,0.011583011583011582
+scanvi,T helper 17 cells,CD4+ T cells,34,0.10897435897435898
+scanvi,T helper 17 cells,CD8+ T cells,7,0.022435897435897436
+scanvi,T helper 17 cells,NK cells,4,0.01282051282051282
+scanvi,T helper 17 cells,Regulatory T cells,22,0.070512820512820512
+scanvi,T helper 17 cells,T follicular helper cells,1,0.003205128205128205
+scanvi,T helper 17 cells,T helper 17 cells,244,0.78205128205128205
+scanvi_knn,CMS1,CMS1,114,0.15039577836411611
+scanvi_knn,CMS1,CMS2,243,0.32058047493403696
+scanvi_knn,CMS1,CMS3,397,0.5237467018469657
+scanvi_knn,CMS1,Mature Enterocytes,2,0.0026385224274406332
+scanvi_knn,CMS1,Pro-inflammatory,1,0.0013192612137203166
+scanvi_knn,CMS1,Stem-like/TA,1,0.0013192612137203166
+scanvi_knn,CMS2,CMS1,13,0.020967741935483872
+scanvi_knn,CMS2,CMS2,562,0.90645161290322585
+scanvi_knn,CMS2,CMS3,34,0.054838709677419356
+scanvi_knn,CMS2,Intermediate,6,0.0096774193548387101
+scanvi_knn,CMS2,Mature Enterocytes,3,0.0048387096774193551
+scanvi_knn,CMS2,Pro-inflammatory,2,0.0032258064516129032
+scanvi_knn,CMS3,CMS1,18,0.022388059701492536
+scanvi_knn,CMS3,CMS2,211,0.26243781094527363
+scanvi_knn,CMS3,CMS3,569,0.70771144278606968
+scanvi_knn,CMS3,Mature Enterocytes,4,0.0049751243781094526
+scanvi_knn,CMS3,Pro-inflammatory,1,0.0012437810945273632
+scanvi_knn,CMS3,Stem-like/TA,1,0.0012437810945273632
+scanvi_knn,CMS4,CMS1,2,0.066666666666666666
+scanvi_knn,CMS4,CMS2,14,0.46666666666666667
+scanvi_knn,CMS4,CMS3,14,0.46666666666666667
+scanvi_knn,cDC,Proliferating,1,0.0061728395061728392
+scanvi_knn,cDC,Regulatory T cells,1,0.0061728395061728392
+scanvi_knn,cDC,SPP1+,12,0.07407407407407407
+scanvi_knn,cDC,cDC,148,0.9135802469135802
+scanvi_knn,T follicular helper cells,CD4+ T cells,38,0.14671814671814673
+scanvi_knn,T follicular helper cells,CD8+ T cells,1,0.0038610038610038611
+scanvi_knn,T follicular helper cells,CMS2,1,0.0038610038610038611
+scanvi_knn,T follicular helper cells,Regulatory T cells,12,0.04633204633204633
+scanvi_knn,T follicular helper cells,T follicular helper cells,206,0.79536679536679533
+scanvi_knn,T follicular helper cells,T helper 17 cells,1,0.0038610038610038611
+scanvi_knn,T helper 17 cells,CD4+ T cells,79,0.25320512820512819
+scanvi_knn,T helper 17 cells,CD8+ T cells,9,0.028846153846153848
+scanvi_knn,T helper 17 cells,NK cells,3,0.0096153846153846159
+scanvi_knn,T helper 17 cells,Regulatory T cells,28,0.089743589743589744
+scanvi_knn,T helper 17 cells,T follicular helper cells,1,0.003205128205128205
+scanvi_knn,T helper 17 cells,T helper 17 cells,192,0.61538461538461542

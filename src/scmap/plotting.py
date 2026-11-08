@@ -13,6 +13,7 @@ from pathlib import Path
 
 import matplotlib as mpl
 import matplotlib.pyplot as plt
+import numpy as np
 from matplotlib.colors import LinearSegmentedColormap
 
 MM = 1 / 25.4  # inches per millimetre
@@ -26,7 +27,8 @@ GRID = "#dddddd"  # kept for reference lines only; no background grid
 # blue and red stay distinct under common colour-vision deficiencies; red and green differ in
 # luminance
 BLUE, RED, PURPLE, SKY, GREEN = "#0072B2", "#B2182B", "#7B3294", "#56B4E9", "#009E73"
-SERIES = [BLUE, RED, GREEN, PURPLE]
+SERIES = [BLUE, RED, GREEN, PURPLE, "#E69F00"]
+CLASSIFIERS = ("logreg", "knn_pca", "scvi_knn", "scanvi", "scanvi_knn")
 SEQUENTIAL = LinearSegmentedColormap.from_list("seq_blue", ["#ffffff", "#9ecae1", BLUE, "#08306b"])
 
 METHOD_LABELS = {
@@ -34,6 +36,7 @@ METHOD_LABELS = {
     "knn_pca": "kNN (PCA)",
     "scvi_knn": "scVI + kNN",
     "scanvi": "scANVI",
+    "scanvi_knn": "scANVI + kNN",
     "scanvi_latent_distance": "scANVI (latent distance)",
 }
 
@@ -94,6 +97,20 @@ def panel_label(ax, letter: str, x: float = -0.12, y: float = 1.04) -> None:
         va="bottom",
         ha="left",
     )
+
+
+def interval_points(ax, positions, values, lows, highs, *, color=BLUE, horizontal=False):
+    """Draw actual percentile endpoints independently of the point estimate."""
+    positions, values, lows, highs = np.broadcast_arrays(positions, values, lows, highs)
+    if not np.isfinite([positions, values, lows, highs]).all() or (lows > highs).any():
+        raise ValueError("interval endpoints must be finite and ordered")
+    if horizontal:
+        intervals = ax.hlines(positions, lows, highs, color=color, lw=0.9)
+        points = ax.plot(values, positions, "o", color=color)
+    else:
+        intervals = ax.vlines(positions, lows, highs, color=color, lw=0.9)
+        points = ax.plot(positions, values, "o", color=color)
+    return intervals, points[0]
 
 
 def save(fig, path: Path) -> None:

@@ -10,6 +10,8 @@ Writes
 
 from __future__ import annotations
 
+import json
+
 import anndata as ad
 import numpy as np
 import pandas as pd
@@ -30,6 +32,10 @@ def main() -> None:
     parent = coarse_of(ref, lab["fine"], lab["coarse"])
     preds = predictions_frame(qry, transfers, parent)
     preds.to_parquet(tables / "predictions.parquet")
+    # Preserve the actual native probability order for later frozen-output verification.
+    (tables / "native_class_order.json").write_text(
+        json.dumps(transfers["scanvi"].classes.tolist(), indent=2) + "\n"
+    )
 
     obs = qry.obs
     role = obs["label_role"].to_numpy()

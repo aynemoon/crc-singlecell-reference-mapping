@@ -1,0 +1,823 @@
+cell_subtype,patient,cells,cohort
+CD19+CD20+ B,SMC01,199,reference
+CD19+CD20+ B,SMC02,172,reference
+CD19+CD20+ B,SMC03,496,reference
+CD19+CD20+ B,SMC04,202,reference
+CD19+CD20+ B,SMC05,130,reference
+CD19+CD20+ B,SMC06,162,reference
+CD19+CD20+ B,SMC07,571,reference
+CD19+CD20+ B,SMC08,595,reference
+CD19+CD20+ B,SMC09,35,reference
+CD19+CD20+ B,SMC10,89,reference
+CD19+CD20+ B,SMC11,61,reference
+CD19+CD20+ B,SMC14,37,reference
+CD19+CD20+ B,SMC15,272,reference
+CD19+CD20+ B,SMC16,8,reference
+CD19+CD20+ B,SMC17,11,reference
+CD19+CD20+ B,SMC18,36,reference
+CD19+CD20+ B,SMC19,233,reference
+CD19+CD20+ B,SMC20,35,reference
+CD19+CD20+ B,SMC21,51,reference
+CD19+CD20+ B,SMC22,18,reference
+CD19+CD20+ B,SMC23,31,reference
+CD19+CD20+ B,SMC24,125,reference
+CD19+CD20+ B,SMC25,164,reference
+CD4+ T cells,SMC01,664,reference
+CD4+ T cells,SMC02,285,reference
+CD4+ T cells,SMC03,433,reference
+CD4+ T cells,SMC04,486,reference
+CD4+ T cells,SMC05,313,reference
+CD4+ T cells,SMC06,552,reference
+CD4+ T cells,SMC07,1471,reference
+CD4+ T cells,SMC08,388,reference
+CD4+ T cells,SMC09,336,reference
+CD4+ T cells,SMC10,419,reference
+CD4+ T cells,SMC11,137,reference
+CD4+ T cells,SMC14,179,reference
+CD4+ T cells,SMC15,119,reference
+CD4+ T cells,SMC16,47,reference
+CD4+ T cells,SMC17,70,reference
+CD4+ T cells,SMC18,78,reference
+CD4+ T cells,SMC19,514,reference
+CD4+ T cells,SMC20,23,reference
+CD4+ T cells,SMC21,57,reference
+CD4+ T cells,SMC22,45,reference
+CD4+ T cells,SMC23,280,reference
+CD4+ T cells,SMC24,138,reference
+CD4+ T cells,SMC25,271,reference
+CD8+ T cells,SMC01,681,reference
+CD8+ T cells,SMC02,201,reference
+CD8+ T cells,SMC03,172,reference
+CD8+ T cells,SMC04,240,reference
+CD8+ T cells,SMC05,446,reference
+CD8+ T cells,SMC06,229,reference
+CD8+ T cells,SMC07,694,reference
+CD8+ T cells,SMC08,558,reference
+CD8+ T cells,SMC09,1118,reference
+CD8+ T cells,SMC10,507,reference
+CD8+ T cells,SMC11,189,reference
+CD8+ T cells,SMC14,243,reference
+CD8+ T cells,SMC15,113,reference
+CD8+ T cells,SMC16,35,reference
+CD8+ T cells,SMC17,54,reference
+CD8+ T cells,SMC18,61,reference
+CD8+ T cells,SMC19,118,reference
+CD8+ T cells,SMC20,35,reference
+CD8+ T cells,SMC21,93,reference
+CD8+ T cells,SMC22,91,reference
+CD8+ T cells,SMC23,103,reference
+CD8+ T cells,SMC24,242,reference
+CD8+ T cells,SMC25,181,reference
+CMS1,SMC01,3,reference
+CMS1,SMC02,5,reference
+CMS1,SMC03,722,reference
+CMS1,SMC05,3,reference
+CMS1,SMC06,85,reference
+CMS1,SMC07,8,reference
+CMS1,SMC08,1,reference
+CMS1,SMC09,3,reference
+CMS1,SMC10,79,reference
+CMS1,SMC11,2,reference
+CMS1,SMC14,12,reference
+CMS1,SMC15,1,reference
+CMS1,SMC16,102,reference
+CMS1,SMC17,18,reference
+CMS1,SMC18,2,reference
+CMS1,SMC19,2,reference
+CMS1,SMC20,1,reference
+CMS1,SMC21,3,reference
+CMS1,SMC22,3,reference
+CMS1,SMC23,4,reference
+CMS1,SMC24,142,reference
+CMS2,SMC01,1004,reference
+CMS2,SMC02,342,reference
+CMS2,SMC03,1,reference
+CMS2,SMC04,285,reference
+CMS2,SMC05,2,reference
+CMS2,SMC06,24,reference
+CMS2,SMC07,493,reference
+CMS2,SMC08,316,reference
+CMS2,SMC09,1841,reference
+CMS2,SMC10,40,reference
+CMS2,SMC11,321,reference
+CMS2,SMC14,104,reference
+CMS2,SMC15,267,reference
+CMS2,SMC16,4,reference
+CMS2,SMC18,1458,reference
+CMS2,SMC19,27,reference
+CMS2,SMC21,1673,reference
+CMS2,SMC22,1690,reference
+CMS2,SMC23,491,reference
+CMS2,SMC24,2,reference
+CMS2,SMC25,386,reference
+CMS3,SMC01,86,reference
+CMS3,SMC02,4,reference
+CMS3,SMC03,73,reference
+CMS3,SMC04,21,reference
+CMS3,SMC05,8,reference
+CMS3,SMC06,80,reference
+CMS3,SMC07,40,reference
+CMS3,SMC08,3,reference
+CMS3,SMC09,43,reference
+CMS3,SMC10,392,reference
+CMS3,SMC11,3,reference
+CMS3,SMC14,48,reference
+CMS3,SMC15,50,reference
+CMS3,SMC16,2614,reference
+CMS3,SMC17,486,reference
+CMS3,SMC18,56,reference
+CMS3,SMC19,353,reference
+CMS3,SMC20,522,reference
+CMS3,SMC21,51,reference
+CMS3,SMC22,209,reference
+CMS3,SMC23,142,reference
+CMS3,SMC24,172,reference
+CMS3,SMC25,30,reference
+CMS4,SMC02,1,reference
+CMS4,SMC04,1,reference
+CMS4,SMC07,1,reference
+CMS4,SMC14,2,reference
+CMS4,SMC15,1,reference
+CMS4,SMC17,1,reference
+CMS4,SMC20,1,reference
+CMS4,SMC23,2,reference
+CMS4,SMC24,1,reference
+Enteric glial cells,SMC01,54,reference
+Enteric glial cells,SMC02,38,reference
+Enteric glial cells,SMC03,1,reference
+Enteric glial cells,SMC04,24,reference
+Enteric glial cells,SMC05,31,reference
+Enteric glial cells,SMC06,4,reference
+Enteric glial cells,SMC07,64,reference
+Enteric glial cells,SMC08,17,reference
+Enteric glial cells,SMC09,4,reference
+Enteric glial cells,SMC10,52,reference
+Enteric glial cells,SMC14,4,reference
+Enteric glial cells,SMC15,10,reference
+Enteric glial cells,SMC17,1,reference
+Enteric glial cells,SMC24,1,reference
+Goblet cells,SMC01,24,reference
+Goblet cells,SMC02,20,reference
+Goblet cells,SMC03,1,reference
+Goblet cells,SMC04,15,reference
+Goblet cells,SMC05,6,reference
+Goblet cells,SMC06,1,reference
+Goblet cells,SMC07,21,reference
+Goblet cells,SMC08,3,reference
+Goblet cells,SMC09,30,reference
+Goblet cells,SMC10,18,reference
+IgA+ Plasma,SMC01,640,reference
+IgA+ Plasma,SMC02,381,reference
+IgA+ Plasma,SMC03,355,reference
+IgA+ Plasma,SMC04,455,reference
+IgA+ Plasma,SMC05,212,reference
+IgA+ Plasma,SMC06,282,reference
+IgA+ Plasma,SMC07,319,reference
+IgA+ Plasma,SMC08,129,reference
+IgA+ Plasma,SMC09,352,reference
+IgA+ Plasma,SMC10,364,reference
+IgA+ Plasma,SMC11,3,reference
+IgA+ Plasma,SMC14,1,reference
+IgA+ Plasma,SMC15,4,reference
+IgA+ Plasma,SMC16,1,reference
+IgA+ Plasma,SMC18,4,reference
+IgA+ Plasma,SMC19,40,reference
+IgA+ Plasma,SMC21,1,reference
+IgA+ Plasma,SMC23,2,reference
+IgA+ Plasma,SMC25,1,reference
+IgG+ Plasma,SMC01,67,reference
+IgG+ Plasma,SMC02,23,reference
+IgG+ Plasma,SMC03,141,reference
+IgG+ Plasma,SMC04,11,reference
+IgG+ Plasma,SMC05,21,reference
+IgG+ Plasma,SMC06,119,reference
+IgG+ Plasma,SMC07,419,reference
+IgG+ Plasma,SMC08,148,reference
+IgG+ Plasma,SMC09,12,reference
+IgG+ Plasma,SMC10,91,reference
+IgG+ Plasma,SMC11,186,reference
+IgG+ Plasma,SMC14,20,reference
+IgG+ Plasma,SMC15,102,reference
+IgG+ Plasma,SMC16,3,reference
+IgG+ Plasma,SMC17,32,reference
+IgG+ Plasma,SMC18,21,reference
+IgG+ Plasma,SMC19,56,reference
+IgG+ Plasma,SMC20,54,reference
+IgG+ Plasma,SMC21,15,reference
+IgG+ Plasma,SMC22,5,reference
+IgG+ Plasma,SMC23,84,reference
+IgG+ Plasma,SMC24,36,reference
+IgG+ Plasma,SMC25,89,reference
+Intermediate,SMC01,33,reference
+Intermediate,SMC02,28,reference
+Intermediate,SMC03,18,reference
+Intermediate,SMC04,22,reference
+Intermediate,SMC05,16,reference
+Intermediate,SMC06,11,reference
+Intermediate,SMC07,19,reference
+Intermediate,SMC08,9,reference
+Intermediate,SMC09,17,reference
+Intermediate,SMC10,8,reference
+Lymphatic ECs,SMC01,13,reference
+Lymphatic ECs,SMC02,13,reference
+Lymphatic ECs,SMC04,19,reference
+Lymphatic ECs,SMC05,5,reference
+Lymphatic ECs,SMC06,2,reference
+Lymphatic ECs,SMC07,25,reference
+Lymphatic ECs,SMC08,2,reference
+Lymphatic ECs,SMC09,3,reference
+Lymphatic ECs,SMC10,14,reference
+Lymphatic ECs,SMC14,4,reference
+Lymphatic ECs,SMC15,5,reference
+Lymphatic ECs,SMC16,2,reference
+Lymphatic ECs,SMC22,1,reference
+Mast cells,SMC01,82,reference
+Mast cells,SMC02,5,reference
+Mast cells,SMC03,2,reference
+Mast cells,SMC04,9,reference
+Mast cells,SMC05,7,reference
+Mast cells,SMC06,2,reference
+Mast cells,SMC07,5,reference
+Mast cells,SMC08,41,reference
+Mast cells,SMC09,6,reference
+Mast cells,SMC10,28,reference
+Mature Enterocytes,SMC01,12,reference
+Mature Enterocytes,SMC02,18,reference
+Mature Enterocytes,SMC03,6,reference
+Mature Enterocytes,SMC04,84,reference
+Mature Enterocytes,SMC05,26,reference
+Mature Enterocytes,SMC06,4,reference
+Mature Enterocytes,SMC07,38,reference
+Mature Enterocytes,SMC08,1,reference
+Mature Enterocytes,SMC09,109,reference
+Mature Enterocytes,SMC10,46,reference
+Myofibroblasts,SMC01,70,reference
+Myofibroblasts,SMC02,43,reference
+Myofibroblasts,SMC03,78,reference
+Myofibroblasts,SMC04,32,reference
+Myofibroblasts,SMC05,6,reference
+Myofibroblasts,SMC06,65,reference
+Myofibroblasts,SMC07,27,reference
+Myofibroblasts,SMC08,124,reference
+Myofibroblasts,SMC09,13,reference
+Myofibroblasts,SMC10,64,reference
+Myofibroblasts,SMC11,9,reference
+Myofibroblasts,SMC14,133,reference
+Myofibroblasts,SMC15,81,reference
+Myofibroblasts,SMC16,3,reference
+Myofibroblasts,SMC17,74,reference
+Myofibroblasts,SMC18,1,reference
+Myofibroblasts,SMC19,2,reference
+Myofibroblasts,SMC20,299,reference
+Myofibroblasts,SMC21,2,reference
+Myofibroblasts,SMC22,1,reference
+Myofibroblasts,SMC23,5,reference
+Myofibroblasts,SMC24,22,reference
+Myofibroblasts,SMC25,1,reference
+NK cells,SMC01,77,reference
+NK cells,SMC02,34,reference
+NK cells,SMC03,74,reference
+NK cells,SMC04,36,reference
+NK cells,SMC05,34,reference
+NK cells,SMC06,88,reference
+NK cells,SMC07,110,reference
+NK cells,SMC08,68,reference
+NK cells,SMC09,34,reference
+NK cells,SMC10,47,reference
+NK cells,SMC11,138,reference
+NK cells,SMC14,54,reference
+NK cells,SMC15,23,reference
+NK cells,SMC16,10,reference
+NK cells,SMC17,20,reference
+NK cells,SMC18,16,reference
+NK cells,SMC19,12,reference
+NK cells,SMC20,31,reference
+NK cells,SMC21,27,reference
+NK cells,SMC22,12,reference
+NK cells,SMC23,39,reference
+NK cells,SMC24,55,reference
+NK cells,SMC25,72,reference
+Pericytes,SMC01,41,reference
+Pericytes,SMC02,15,reference
+Pericytes,SMC03,8,reference
+Pericytes,SMC04,36,reference
+Pericytes,SMC05,8,reference
+Pericytes,SMC06,15,reference
+Pericytes,SMC07,46,reference
+Pericytes,SMC08,15,reference
+Pericytes,SMC09,10,reference
+Pericytes,SMC10,33,reference
+Pericytes,SMC11,10,reference
+Pericytes,SMC14,23,reference
+Pericytes,SMC15,71,reference
+Pericytes,SMC16,2,reference
+Pericytes,SMC17,54,reference
+Pericytes,SMC19,3,reference
+Pericytes,SMC20,39,reference
+Pericytes,SMC22,2,reference
+Pericytes,SMC23,5,reference
+Pericytes,SMC24,7,reference
+Pericytes,SMC25,2,reference
+Pro-inflammatory,SMC01,71,reference
+Pro-inflammatory,SMC02,254,reference
+Pro-inflammatory,SMC03,109,reference
+Pro-inflammatory,SMC04,405,reference
+Pro-inflammatory,SMC05,9,reference
+Pro-inflammatory,SMC06,81,reference
+Pro-inflammatory,SMC07,79,reference
+Pro-inflammatory,SMC08,145,reference
+Pro-inflammatory,SMC09,140,reference
+Pro-inflammatory,SMC10,145,reference
+Pro-inflammatory,SMC11,18,reference
+Pro-inflammatory,SMC14,244,reference
+Pro-inflammatory,SMC15,53,reference
+Pro-inflammatory,SMC16,18,reference
+Pro-inflammatory,SMC17,162,reference
+Pro-inflammatory,SMC18,28,reference
+Pro-inflammatory,SMC19,7,reference
+Pro-inflammatory,SMC20,83,reference
+Pro-inflammatory,SMC21,15,reference
+Pro-inflammatory,SMC22,43,reference
+Pro-inflammatory,SMC23,69,reference
+Pro-inflammatory,SMC24,190,reference
+Pro-inflammatory,SMC25,31,reference
+Proliferating,SMC01,4,reference
+Proliferating,SMC02,7,reference
+Proliferating,SMC03,5,reference
+Proliferating,SMC04,16,reference
+Proliferating,SMC06,6,reference
+Proliferating,SMC07,32,reference
+Proliferating,SMC08,1,reference
+Proliferating,SMC09,10,reference
+Proliferating,SMC10,42,reference
+Proliferating,SMC11,3,reference
+Proliferating,SMC14,4,reference
+Proliferating,SMC15,4,reference
+Proliferating,SMC16,2,reference
+Proliferating,SMC17,8,reference
+Proliferating,SMC18,2,reference
+Proliferating,SMC20,5,reference
+Proliferating,SMC21,5,reference
+Proliferating,SMC22,3,reference
+Proliferating,SMC23,6,reference
+Proliferating,SMC24,4,reference
+Proliferating,SMC25,2,reference
+Proliferative ECs,SMC01,3,reference
+Proliferative ECs,SMC02,2,reference
+Proliferative ECs,SMC03,1,reference
+Proliferative ECs,SMC04,5,reference
+Proliferative ECs,SMC07,9,reference
+Proliferative ECs,SMC08,2,reference
+Proliferative ECs,SMC09,1,reference
+Proliferative ECs,SMC10,4,reference
+Proliferative ECs,SMC14,4,reference
+Proliferative ECs,SMC15,2,reference
+Proliferative ECs,SMC17,6,reference
+Proliferative ECs,SMC23,2,reference
+Proliferative ECs,SMC24,2,reference
+Proliferative ECs,SMC25,1,reference
+Regulatory T cells,SMC01,259,reference
+Regulatory T cells,SMC02,153,reference
+Regulatory T cells,SMC03,76,reference
+Regulatory T cells,SMC04,137,reference
+Regulatory T cells,SMC05,63,reference
+Regulatory T cells,SMC06,469,reference
+Regulatory T cells,SMC07,286,reference
+Regulatory T cells,SMC08,102,reference
+Regulatory T cells,SMC09,234,reference
+Regulatory T cells,SMC10,274,reference
+Regulatory T cells,SMC11,106,reference
+Regulatory T cells,SMC14,102,reference
+Regulatory T cells,SMC15,162,reference
+Regulatory T cells,SMC16,29,reference
+Regulatory T cells,SMC17,46,reference
+Regulatory T cells,SMC18,49,reference
+Regulatory T cells,SMC19,46,reference
+Regulatory T cells,SMC20,65,reference
+Regulatory T cells,SMC21,80,reference
+Regulatory T cells,SMC22,50,reference
+Regulatory T cells,SMC23,90,reference
+Regulatory T cells,SMC24,126,reference
+Regulatory T cells,SMC25,93,reference
+SPP1+,SMC01,99,reference
+SPP1+,SMC02,303,reference
+SPP1+,SMC03,188,reference
+SPP1+,SMC04,373,reference
+SPP1+,SMC05,18,reference
+SPP1+,SMC06,124,reference
+SPP1+,SMC07,157,reference
+SPP1+,SMC08,158,reference
+SPP1+,SMC09,223,reference
+SPP1+,SMC10,428,reference
+SPP1+,SMC11,39,reference
+SPP1+,SMC14,276,reference
+SPP1+,SMC15,63,reference
+SPP1+,SMC16,21,reference
+SPP1+,SMC17,160,reference
+SPP1+,SMC18,37,reference
+SPP1+,SMC19,14,reference
+SPP1+,SMC20,208,reference
+SPP1+,SMC21,35,reference
+SPP1+,SMC22,31,reference
+SPP1+,SMC23,129,reference
+SPP1+,SMC24,142,reference
+SPP1+,SMC25,26,reference
+Smooth muscle cells,SMC01,19,reference
+Smooth muscle cells,SMC02,17,reference
+Smooth muscle cells,SMC03,5,reference
+Smooth muscle cells,SMC04,22,reference
+Smooth muscle cells,SMC05,3,reference
+Smooth muscle cells,SMC06,1,reference
+Smooth muscle cells,SMC07,36,reference
+Smooth muscle cells,SMC08,6,reference
+Smooth muscle cells,SMC09,11,reference
+Smooth muscle cells,SMC10,28,reference
+Smooth muscle cells,SMC14,37,reference
+Smooth muscle cells,SMC15,11,reference
+Smooth muscle cells,SMC16,2,reference
+Smooth muscle cells,SMC17,4,reference
+Smooth muscle cells,SMC19,4,reference
+Smooth muscle cells,SMC20,7,reference
+Smooth muscle cells,SMC23,1,reference
+Stalk-like ECs,SMC01,41,reference
+Stalk-like ECs,SMC02,32,reference
+Stalk-like ECs,SMC03,25,reference
+Stalk-like ECs,SMC04,60,reference
+Stalk-like ECs,SMC05,6,reference
+Stalk-like ECs,SMC06,5,reference
+Stalk-like ECs,SMC07,51,reference
+Stalk-like ECs,SMC08,36,reference
+Stalk-like ECs,SMC09,12,reference
+Stalk-like ECs,SMC10,16,reference
+Stalk-like ECs,SMC11,6,reference
+Stalk-like ECs,SMC14,57,reference
+Stalk-like ECs,SMC15,21,reference
+Stalk-like ECs,SMC16,2,reference
+Stalk-like ECs,SMC17,23,reference
+Stalk-like ECs,SMC18,4,reference
+Stalk-like ECs,SMC19,4,reference
+Stalk-like ECs,SMC20,10,reference
+Stalk-like ECs,SMC22,5,reference
+Stalk-like ECs,SMC23,4,reference
+Stalk-like ECs,SMC24,5,reference
+Stalk-like ECs,SMC25,13,reference
+Stem-like/TA,SMC01,90,reference
+Stem-like/TA,SMC02,53,reference
+Stem-like/TA,SMC03,40,reference
+Stem-like/TA,SMC04,48,reference
+Stem-like/TA,SMC05,27,reference
+Stem-like/TA,SMC06,7,reference
+Stem-like/TA,SMC07,50,reference
+Stem-like/TA,SMC08,5,reference
+Stem-like/TA,SMC09,33,reference
+Stem-like/TA,SMC10,53,reference
+Stromal 1,SMC01,151,reference
+Stromal 1,SMC02,46,reference
+Stromal 1,SMC03,2,reference
+Stromal 1,SMC04,150,reference
+Stromal 1,SMC05,67,reference
+Stromal 1,SMC06,33,reference
+Stromal 1,SMC07,178,reference
+Stromal 1,SMC08,70,reference
+Stromal 1,SMC09,62,reference
+Stromal 1,SMC10,259,reference
+Stromal 1,SMC11,2,reference
+Stromal 1,SMC14,2,reference
+Stromal 1,SMC15,9,reference
+Stromal 1,SMC19,5,reference
+Stromal 1,SMC20,2,reference
+Stromal 1,SMC23,3,reference
+Stromal 1,SMC24,4,reference
+Stromal 2,SMC01,45,reference
+Stromal 2,SMC02,46,reference
+Stromal 2,SMC03,1,reference
+Stromal 2,SMC04,32,reference
+Stromal 2,SMC05,16,reference
+Stromal 2,SMC06,5,reference
+Stromal 2,SMC07,58,reference
+Stromal 2,SMC08,22,reference
+Stromal 2,SMC09,17,reference
+Stromal 2,SMC10,72,reference
+Stromal 2,SMC11,11,reference
+Stromal 2,SMC14,2,reference
+Stromal 2,SMC15,16,reference
+Stromal 2,SMC16,13,reference
+Stromal 2,SMC17,2,reference
+Stromal 2,SMC19,17,reference
+Stromal 2,SMC20,4,reference
+Stromal 2,SMC21,2,reference
+Stromal 2,SMC22,3,reference
+Stromal 2,SMC23,6,reference
+Stromal 2,SMC24,1,reference
+Stromal 2,SMC25,3,reference
+Stromal 3,SMC01,81,reference
+Stromal 3,SMC02,45,reference
+Stromal 3,SMC03,103,reference
+Stromal 3,SMC04,137,reference
+Stromal 3,SMC05,42,reference
+Stromal 3,SMC06,16,reference
+Stromal 3,SMC07,120,reference
+Stromal 3,SMC08,42,reference
+Stromal 3,SMC09,32,reference
+Stromal 3,SMC10,239,reference
+Stromal 3,SMC15,9,reference
+Stromal 3,SMC18,1,reference
+Stromal 3,SMC24,1,reference
+T follicular helper cells,SMC01,59,reference
+T follicular helper cells,SMC02,11,reference
+T follicular helper cells,SMC03,13,reference
+T follicular helper cells,SMC04,10,reference
+T follicular helper cells,SMC05,39,reference
+T follicular helper cells,SMC06,10,reference
+T follicular helper cells,SMC07,100,reference
+T follicular helper cells,SMC08,77,reference
+T follicular helper cells,SMC09,24,reference
+T follicular helper cells,SMC10,12,reference
+T follicular helper cells,SMC11,88,reference
+T follicular helper cells,SMC14,5,reference
+T follicular helper cells,SMC15,38,reference
+T follicular helper cells,SMC17,3,reference
+T follicular helper cells,SMC18,4,reference
+T follicular helper cells,SMC19,4,reference
+T follicular helper cells,SMC21,5,reference
+T follicular helper cells,SMC22,2,reference
+T follicular helper cells,SMC23,14,reference
+T follicular helper cells,SMC24,71,reference
+T follicular helper cells,SMC25,31,reference
+T helper 17 cells,SMC01,118,reference
+T helper 17 cells,SMC02,64,reference
+T helper 17 cells,SMC03,3,reference
+T helper 17 cells,SMC04,24,reference
+T helper 17 cells,SMC05,9,reference
+T helper 17 cells,SMC06,6,reference
+T helper 17 cells,SMC07,148,reference
+T helper 17 cells,SMC08,227,reference
+T helper 17 cells,SMC09,28,reference
+T helper 17 cells,SMC10,39,reference
+T helper 17 cells,SMC11,318,reference
+T helper 17 cells,SMC14,35,reference
+T helper 17 cells,SMC15,157,reference
+T helper 17 cells,SMC16,26,reference
+T helper 17 cells,SMC17,29,reference
+T helper 17 cells,SMC18,56,reference
+T helper 17 cells,SMC19,61,reference
+T helper 17 cells,SMC20,1,reference
+T helper 17 cells,SMC21,220,reference
+T helper 17 cells,SMC22,122,reference
+T helper 17 cells,SMC23,76,reference
+T helper 17 cells,SMC24,9,reference
+T helper 17 cells,SMC25,202,reference
+Tip-like ECs,SMC01,76,reference
+Tip-like ECs,SMC02,73,reference
+Tip-like ECs,SMC03,19,reference
+Tip-like ECs,SMC04,71,reference
+Tip-like ECs,SMC05,96,reference
+Tip-like ECs,SMC06,24,reference
+Tip-like ECs,SMC07,173,reference
+Tip-like ECs,SMC08,55,reference
+Tip-like ECs,SMC09,16,reference
+Tip-like ECs,SMC10,107,reference
+Tip-like ECs,SMC11,15,reference
+Tip-like ECs,SMC14,31,reference
+Tip-like ECs,SMC15,71,reference
+Tip-like ECs,SMC16,5,reference
+Tip-like ECs,SMC17,39,reference
+Tip-like ECs,SMC18,1,reference
+Tip-like ECs,SMC19,2,reference
+Tip-like ECs,SMC20,13,reference
+Tip-like ECs,SMC22,4,reference
+Tip-like ECs,SMC23,7,reference
+Tip-like ECs,SMC24,12,reference
+Tip-like ECs,SMC25,7,reference
+cDC,SMC01,31,reference
+cDC,SMC02,36,reference
+cDC,SMC03,9,reference
+cDC,SMC04,59,reference
+cDC,SMC05,10,reference
+cDC,SMC06,24,reference
+cDC,SMC07,36,reference
+cDC,SMC08,19,reference
+cDC,SMC09,28,reference
+cDC,SMC10,39,reference
+cDC,SMC11,8,reference
+cDC,SMC14,39,reference
+cDC,SMC15,19,reference
+cDC,SMC16,1,reference
+cDC,SMC17,17,reference
+cDC,SMC18,9,reference
+cDC,SMC19,6,reference
+cDC,SMC20,23,reference
+cDC,SMC21,3,reference
+cDC,SMC22,7,reference
+cDC,SMC23,23,reference
+cDC,SMC24,23,reference
+cDC,SMC25,13,reference
+gamma delta T cells,SMC01,87,reference
+gamma delta T cells,SMC02,115,reference
+gamma delta T cells,SMC03,63,reference
+gamma delta T cells,SMC04,48,reference
+gamma delta T cells,SMC05,84,reference
+gamma delta T cells,SMC06,79,reference
+gamma delta T cells,SMC07,307,reference
+gamma delta T cells,SMC08,80,reference
+gamma delta T cells,SMC09,55,reference
+gamma delta T cells,SMC10,41,reference
+gamma delta T cells,SMC11,10,reference
+gamma delta T cells,SMC15,4,reference
+gamma delta T cells,SMC16,2,reference
+gamma delta T cells,SMC18,9,reference
+gamma delta T cells,SMC20,1,reference
+gamma delta T cells,SMC21,1,reference
+gamma delta T cells,SMC23,2,reference
+gamma delta T cells,SMC24,4,reference
+gamma delta T cells,SMC25,4,reference
+CD19+CD20+ B,KUL01,5,query_shared
+CD19+CD20+ B,KUL19,1369,query_shared
+CD19+CD20+ B,KUL21,95,query_shared
+CD19+CD20+ B,KUL28,82,query_shared
+CD19+CD20+ B,KUL30,13,query_shared
+CD19+CD20+ B,KUL31,281,query_shared
+CD4+ T cells,KUL01,57,query_shared
+CD4+ T cells,KUL19,1089,query_shared
+CD4+ T cells,KUL21,613,query_shared
+CD4+ T cells,KUL28,70,query_shared
+CD4+ T cells,KUL30,30,query_shared
+CD4+ T cells,KUL31,202,query_shared
+CD8+ T cells,KUL01,80,query_shared
+CD8+ T cells,KUL19,773,query_shared
+CD8+ T cells,KUL21,140,query_shared
+CD8+ T cells,KUL28,56,query_shared
+CD8+ T cells,KUL30,21,query_shared
+CD8+ T cells,KUL31,256,query_shared
+CMS1,KUL01,286,query_shared
+CMS1,KUL19,13,query_shared
+CMS1,KUL21,458,query_shared
+CMS1,KUL30,1,query_shared
+CMS2,KUL01,7,query_shared
+CMS2,KUL19,488,query_shared
+CMS2,KUL21,7,query_shared
+CMS2,KUL28,39,query_shared
+CMS2,KUL30,51,query_shared
+CMS2,KUL31,28,query_shared
+CMS3,KUL01,434,query_shared
+CMS3,KUL19,67,query_shared
+CMS3,KUL21,273,query_shared
+CMS3,KUL28,1,query_shared
+CMS3,KUL30,16,query_shared
+CMS3,KUL31,13,query_shared
+CMS4,KUL01,3,query_shared
+CMS4,KUL19,6,query_shared
+CMS4,KUL21,21,query_shared
+Enteric glial cells,KUL01,48,query_shared
+Enteric glial cells,KUL19,118,query_shared
+Enteric glial cells,KUL21,5,query_shared
+Enteric glial cells,KUL28,95,query_shared
+Enteric glial cells,KUL30,178,query_shared
+Enteric glial cells,KUL31,19,query_shared
+Goblet cells,KUL01,58,query_shared
+Goblet cells,KUL19,48,query_shared
+Goblet cells,KUL21,45,query_shared
+Goblet cells,KUL28,1,query_shared
+Goblet cells,KUL30,2,query_shared
+Goblet cells,KUL31,11,query_shared
+IgA+ Plasma,KUL01,335,query_shared
+IgA+ Plasma,KUL19,539,query_shared
+IgA+ Plasma,KUL21,230,query_shared
+IgA+ Plasma,KUL28,306,query_shared
+IgA+ Plasma,KUL30,1032,query_shared
+IgA+ Plasma,KUL31,275,query_shared
+IgG+ Plasma,KUL01,10,query_shared
+IgG+ Plasma,KUL19,1,query_shared
+IgG+ Plasma,KUL21,84,query_shared
+IgG+ Plasma,KUL28,1,query_shared
+IgG+ Plasma,KUL30,4,query_shared
+IgG+ Plasma,KUL31,5,query_shared
+Intermediate,KUL01,26,query_shared
+Intermediate,KUL19,42,query_shared
+Intermediate,KUL21,98,query_shared
+Intermediate,KUL28,13,query_shared
+Intermediate,KUL30,13,query_shared
+Intermediate,KUL31,61,query_shared
+Lymphatic ECs,KUL01,32,query_shared
+Lymphatic ECs,KUL19,27,query_shared
+Lymphatic ECs,KUL21,9,query_shared
+Lymphatic ECs,KUL28,20,query_shared
+Lymphatic ECs,KUL30,29,query_shared
+Lymphatic ECs,KUL31,6,query_shared
+Mast cells,KUL01,28,query_shared
+Mast cells,KUL19,62,query_shared
+Mast cells,KUL21,73,query_shared
+Mast cells,KUL28,41,query_shared
+Mast cells,KUL30,26,query_shared
+Mast cells,KUL31,18,query_shared
+Mature Enterocytes,KUL01,25,query_shared
+Mature Enterocytes,KUL19,54,query_shared
+Mature Enterocytes,KUL21,37,query_shared
+Mature Enterocytes,KUL30,4,query_shared
+Mature Enterocytes,KUL31,33,query_shared
+Myofibroblasts,KUL01,226,query_shared
+Myofibroblasts,KUL19,141,query_shared
+Myofibroblasts,KUL21,635,query_shared
+Myofibroblasts,KUL28,47,query_shared
+Myofibroblasts,KUL30,123,query_shared
+Myofibroblasts,KUL31,54,query_shared
+NK cells,KUL01,115,query_shared
+NK cells,KUL19,71,query_shared
+NK cells,KUL21,37,query_shared
+NK cells,KUL28,11,query_shared
+NK cells,KUL30,3,query_shared
+NK cells,KUL31,33,query_shared
+Pericytes,KUL01,78,query_shared
+Pericytes,KUL19,58,query_shared
+Pericytes,KUL21,106,query_shared
+Pericytes,KUL28,124,query_shared
+Pericytes,KUL30,56,query_shared
+Pericytes,KUL31,16,query_shared
+Pro-inflammatory,KUL01,271,query_shared
+Pro-inflammatory,KUL19,138,query_shared
+Pro-inflammatory,KUL21,174,query_shared
+Pro-inflammatory,KUL28,28,query_shared
+Pro-inflammatory,KUL30,68,query_shared
+Pro-inflammatory,KUL31,25,query_shared
+Proliferating,KUL01,39,query_shared
+Proliferating,KUL19,123,query_shared
+Proliferating,KUL21,45,query_shared
+Proliferating,KUL28,17,query_shared
+Proliferating,KUL30,27,query_shared
+Proliferating,KUL31,23,query_shared
+Regulatory T cells,KUL01,340,query_shared
+Regulatory T cells,KUL19,631,query_shared
+Regulatory T cells,KUL21,50,query_shared
+Regulatory T cells,KUL28,34,query_shared
+Regulatory T cells,KUL30,11,query_shared
+Regulatory T cells,KUL31,45,query_shared
+SPP1+,KUL01,362,query_shared
+SPP1+,KUL19,69,query_shared
+SPP1+,KUL21,197,query_shared
+SPP1+,KUL28,31,query_shared
+SPP1+,KUL30,54,query_shared
+SPP1+,KUL31,24,query_shared
+Smooth muscle cells,KUL01,159,query_shared
+Smooth muscle cells,KUL19,174,query_shared
+Smooth muscle cells,KUL21,64,query_shared
+Smooth muscle cells,KUL28,36,query_shared
+Smooth muscle cells,KUL30,145,query_shared
+Smooth muscle cells,KUL31,13,query_shared
+Stalk-like ECs,KUL01,64,query_shared
+Stalk-like ECs,KUL19,131,query_shared
+Stalk-like ECs,KUL21,47,query_shared
+Stalk-like ECs,KUL28,123,query_shared
+Stalk-like ECs,KUL30,142,query_shared
+Stalk-like ECs,KUL31,16,query_shared
+Stem-like/TA,KUL01,45,query_shared
+Stem-like/TA,KUL19,133,query_shared
+Stem-like/TA,KUL21,61,query_shared
+Stem-like/TA,KUL28,4,query_shared
+Stem-like/TA,KUL30,127,query_shared
+Stem-like/TA,KUL31,125,query_shared
+Stromal 1,KUL01,123,query_shared
+Stromal 1,KUL19,76,query_shared
+Stromal 1,KUL21,90,query_shared
+Stromal 1,KUL28,114,query_shared
+Stromal 1,KUL30,190,query_shared
+Stromal 1,KUL31,99,query_shared
+Stromal 2,KUL01,29,query_shared
+Stromal 2,KUL19,26,query_shared
+Stromal 2,KUL21,9,query_shared
+Stromal 2,KUL28,14,query_shared
+Stromal 2,KUL30,98,query_shared
+Stromal 2,KUL31,21,query_shared
+Stromal 3,KUL01,726,query_shared
+Stromal 3,KUL19,644,query_shared
+Stromal 3,KUL21,351,query_shared
+Stromal 3,KUL28,227,query_shared
+Stromal 3,KUL30,423,query_shared
+Stromal 3,KUL31,96,query_shared
+T follicular helper cells,KUL01,5,query_shared
+T follicular helper cells,KUL19,228,query_shared
+T follicular helper cells,KUL21,11,query_shared
+T follicular helper cells,KUL28,1,query_shared
+T follicular helper cells,KUL31,14,query_shared
+T helper 17 cells,KUL01,84,query_shared
+T helper 17 cells,KUL19,47,query_shared
+T helper 17 cells,KUL21,11,query_shared
+T helper 17 cells,KUL30,2,query_shared
+T helper 17 cells,KUL31,168,query_shared
+Tip-like ECs,KUL01,186,query_shared
+Tip-like ECs,KUL19,222,query_shared
+Tip-like ECs,KUL21,108,query_shared
+Tip-like ECs,KUL28,109,query_shared
+Tip-like ECs,KUL30,249,query_shared
+Tip-like ECs,KUL31,56,query_shared
+cDC,KUL01,15,query_shared
+cDC,KUL19,76,query_shared
+cDC,KUL21,31,query_shared
+cDC,KUL28,5,query_shared
+cDC,KUL30,15,query_shared
+cDC,KUL31,20,query_shared
+gamma delta T cells,KUL01,6,query_shared
+gamma delta T cells,KUL19,20,query_shared
+gamma delta T cells,KUL21,78,query_shared
+gamma delta T cells,KUL28,38,query_shared
+gamma delta T cells,KUL30,4,query_shared
+gamma delta T cells,KUL31,13,query_shared

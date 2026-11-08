@@ -10,6 +10,7 @@ from matplotlib.ticker import FormatStrFormatter
 
 from scmap.config import load_config
 from scmap.plotting import (
+    CLASSIFIERS,
     DOUBLE,
     INK,
     INK_3,
@@ -21,13 +22,13 @@ from scmap.plotting import (
     SINGLE,
     SKY,
     apply_style,
+    interval_points,
     panel_label,
     save,
 )
 
 cfg = load_config()
 TAB, FIG = cfg.path("results") / "tables", cfg.path("results") / "figures"
-CLASSIFIERS = ["logreg", "knn_pca", "scvi_knn", "scanvi"]
 NOVELTY_METHODS = ["logreg", "scvi_knn", "scanvi", "scanvi_latent_distance"]
 
 
@@ -133,18 +134,9 @@ def fig_accuracy() -> None:
             .query("metric == 'macro_f1'")
             .set_index("method")
         )
-        m = m.loc[CLASSIFIERS]
+        m = m.loc[[method for method in CLASSIFIERS if method in m.index]]
         x = np.arange(len(m))
-        # with 6 query patients the percentile interval can sit below the point estimate
-        # (most patient-resamples omit a patient and score lower); clip bars at zero
-        ax.errorbar(
-            x,
-            m.value,
-            yerr=[np.clip(m.value - m.ci_low, 0, None), np.clip(m.ci_high - m.value, 0, None)],
-            fmt="o",
-            color=SERIES[0],
-            elinewidth=0.8,
-        )
+        interval_points(ax, x, m.value, m.ci_low, m.ci_high, color=SERIES[0])
         ax.set_xticks(x, [METHOD_LABELS[k] for k in m.index], rotation=30, ha="right")
         ax.set_xlim(-0.6, len(m) - 0.4)
         ax.set_ylabel(f"Macro-F1 on KUL3\n{label}")
@@ -155,7 +147,8 @@ def fig_accuracy() -> None:
 
 
 def fig_per_class() -> None:
-    f1 = pd.read_csv(TAB / "per_class_f1_fine.csv", index_col=0)[CLASSIFIERS]
+    f1 = pd.read_csv(TAB / "per_class_f1_fine.csv", index_col=0)
+    f1 = f1[[method for method in CLASSIFIERS if method in f1]]
     roles = pd.read_csv(TAB / "label_roles.csv").set_index("cell_subtype")
     f1 = f1.assign(_ct=roles.loc[f1.index, "cell_type"].to_numpy()).sort_values(["_ct", "scanvi"])
     groups = f1.pop("_ct")
@@ -205,7 +198,7 @@ def fig_open_set() -> None:
     fig, ax = plt.subplots(figsize=(ONE_HALF, 55 * MM))
     ax.axhline(0.5, color=INK_3, lw=0.6, ls="--")
     offsets = np.linspace(-0.24, 0.24, len(NOVELTY_METHODS))
-    for off, method, colour in zip(offsets, NOVELTY_METHODS, SERIES, strict=True):
+    for off, method, colour in zip(offsets, NOVELTY_METHODS, SERIES[: len(offsets)], strict=True):
         d = a[a.method == method].set_index("held_out").reindex(types)
         ax.scatter(
             np.arange(len(types)) + off,
@@ -239,7 +232,7 @@ def fig_natural_novelty(preds: pd.DataFrame, obs: pd.DataFrame) -> None:
     groups = [("Shared subtypes", p.label_role == "shared")] + [
         (t, p.cell_subtype == t) for t in ("Anti-inflammatory", "BEST4+ Enterocytes", "Tuft cells")
     ]
-    for (name, m), colour in zip(groups, SERIES, strict=True):
+    for (name, m), colour in zip(groups, SERIES[: len(groups)], strict=True):
         v = np.sort(p.loc[m, "novelty"].to_numpy())
         ax.plot(v, np.linspace(0, 1, len(v)), color=colour, label=f"{name} (n = {m.sum():,})")
     ax.set(
@@ -257,6 +250,8 @@ def fig_selective_prediction(preds: pd.DataFrame, obs: pd.DataFrame) -> None:
     rows = []
     for method, colour in zip(CLASSIFIERS, SERIES, strict=True):
         p = preds[preds.method == method].set_index("cell").join(obs)
+        if p.empty:  # archived predictions may predate a method
+            continue
         p = p[p.label_role == "shared"]
         correct = (p.pred_fine == p.cell_subtype).to_numpy()
         order = np.argsort(-p.confidence.to_numpy())
